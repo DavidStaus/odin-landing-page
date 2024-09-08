@@ -8,6 +8,7 @@
     --information-header-text-color: #1F2937;
     --quote-bg-color: #E5E7EB;
     --quote-text-color: #1F2937;
+    --side-padding: 0 15vw;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
 
 header {
     background-color: var(--dark-background-color);
-    padding: 0 15vw
+    padding: var(--side-padding)
 }
 
 .logo {
@@ -38,6 +39,7 @@ ul {
     justify-content: space-between;
     margin-bottom: 150px;
     padding: 1rem;
+    flex-wrap: wrap;
 }
 
 .navbar a{
@@ -48,7 +50,8 @@ ul {
 .hero {
     display: flex;
     margin-bottom: 150px;
-    gap: 4rem;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 header .container {
@@ -78,6 +81,8 @@ header .container {
     color: var(--hero-second-text-color);
     justify-content: center;
     align-items: center;
+    min-width: 350px;
+    min-height: 200px;
 }
 
 .signup {
@@ -89,11 +94,21 @@ header .container {
     padding: 8px 32px;
     font-size: 16px;
     font-weight: bold;
+    flex-grow: 0;
 }
 
-main .container {
+section.first {
+    padding: var(--side-padding);
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin-bottom: 150px;
+}
+
+.first .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .info {
@@ -107,12 +122,80 @@ main .container {
 figure.container {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+    width: 175px;
+    justify-content: center;
+    text-align: center;
 }
 
 .illustration {
-    border: 2px solid deepskyblue;
-    width: 150px;
-    height: 150px;
+    border: 3px solid rgb(0, 89, 255);
+    width: 175px;
+    height: 175px;
     flex-shrink: 0;
     border-radius: 16px;
+}
+
+section.second {
+    background-color: var(--hero-second-text-color);
+    padding: 150px 15vw;
+}
+
+.second blockquote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937
+}
+
+.second .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10vw;
+}
+
+.second cite {
+    font-weight: bold;
+    margin-left: auto;
+    font-style: normal;
+}
+
+section.three {
+    padding: var(--side-padding);
+}
+
+.three .container {
+    margin: 150px 0;
+    padding: 40px 75px;
+    background-color: var(--button-color);
+    display: flex;
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.three h3 {
+    color: var(--hero-main-text-color);
+    font-size: 24px;
+}
+
+.three p {
+    color: var(--hero-second-text-color);
+}
+
+.lefttext {
+    display: flex;
+    flex-direction: column;
+}
+
+.three button {
+    border: solid var(--hero-main-text-color) 2px;
+    padding: 6px 30px;
+}
+
+footer {
+    background-color: var(--dark-background-color);
+    padding: 2rem 0;
+    color: var(--hero-second-text-color);
+    text-align: center;
 }
