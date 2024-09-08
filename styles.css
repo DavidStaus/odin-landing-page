@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    --dark-background-color: #1F2937;
+    --hero-main-text-color: #f9faf8;
+    --hero-second-text-color: #E5E7EB;
+    --button-color: #3882F6;
+    --information-header-text-color: #1F2937;
+    --quote-bg-color: #E5E7EB;
+    --quote-text-color: #1F2937;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    background-color: var(--dark-background-color);
+    padding: 0 15vw
+}
+
+.logo {
+    font-size: 24px;
+    color: var(--hero-main-text-color);
+    font-weight: 1000;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+    padding: 1rem;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--hero-second-text-color);
+}
+
+.hero {
+    display: flex;
+    margin-bottom: 150px;
+    gap: 4rem;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 1rem;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--hero-main-text-color);
+}
+
+.subtext {
+    font-size: 18px;
+    color: var(--hero-second-text-color);
+}
+
+.image {
+    display: flex;
+    flex: 1;
+    background: grey;
+    color: var(--hero-second-text-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.signup {
+    cursor: pointer;
+    background-color: #3882F6;
+    color: var(--hero-main-text-color);
+    border: 1px solid #3882F6;
+    border-radius: 8px;
+    padding: 8px 32px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+main .container {
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 36px;
+    color: var(--information-header-text-color);
+    font-weight: 900;
+}
+
+figure.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.illustration {
+    border: 2px solid deepskyblue;
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    border-radius: 16px;
+}
